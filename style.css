@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div {
+    display: flex;
+    width: 560px;
+    height: 560px;
+    flex-wrap: wrap;
+}
+
+.field {
+    display: flex;
+    height: 35px;
+    width: 35px;
+    flex: auto;
+    border: solid, 1px, black;
+
+}
+
+.black {
+    background-color: black;
+}
