@@ -7,15 +7,22 @@
 body {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.main-div {
+#container {
     display: flex;
     width: 560px;
     height: 560px;
     flex-wrap: wrap;
+}
+
+#placeholder {
+
+    display: flex;
+    flex-direction: row;
 }
 
 .field {
