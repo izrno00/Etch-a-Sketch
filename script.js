@@ -1,9 +1,9 @@
 const container = document.querySelector("#container");
 
 
-function createGrid() {
+function createGrid(a) {
 
-    for(let i = 0; i < 256; i++) {
+    for(let i = 0; i < (a * a); i++) {
 
     const singleDiv = document.createElement("div");
 
@@ -18,6 +18,6 @@ function createGrid() {
 
 
 
-createGrid();
+createGrid(16);
 
 
