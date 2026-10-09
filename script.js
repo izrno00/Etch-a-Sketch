@@ -23,8 +23,12 @@ createGrid(16);
 
 btnSize.addEventListener("click", () => {
     
-    document.querySelectorAll(".field").forEach(element => element.remove())
-    createGrid(input.value)});
+    document.querySelectorAll(".field").forEach(element => element.remove());
+    createGrid(input.value);
+
+});
+
+btnReset.addEventListener("click", () => document.querySelectorAll(".black").forEach(element => element.classList.remove("black")));
 
 
 
