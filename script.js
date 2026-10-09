@@ -1,4 +1,6 @@
 const container = document.querySelector("#container");
+const btnSize = document.querySelector("#size");
+const input = document.querySelector("#input-size");
 
 
 function createGrid(a) {
@@ -17,7 +19,11 @@ function createGrid(a) {
 }
 
 
+btnSize.addEventListener("click", () => createGrid(input.value));
+
 
 createGrid(16);
+
+
 
 
