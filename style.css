@@ -14,24 +14,25 @@ body {
 
 #container {
     display: flex;
+    flex-direction: column;
     width: 560px;
     height: 560px;
-    flex-wrap: wrap;
 }
 
 #placeholder {
-
     display: flex;
     flex-direction: row;
 }
 
-.field {
+.single-row {
     display: flex;
-    height: 35px;
-    width: 35px;
-    flex: auto;
-    border: solid, 1px, black;
+    flex-direction: row;
+    flex: 1;
+}
 
+.field {
+    flex: 1;
+    border: solid, 1px, black;
 }
 
 .black {

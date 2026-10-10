@@ -6,15 +6,26 @@ const input = document.querySelector("#input-size");
 
 function createGrid(a) {
 
-    for(let i = 0; i < (a * a); i++) {
+    for(let i = 0; i < a; i++) {
 
-    const singleDiv = document.createElement("div");
+    const singleRow = document.createElement("div");
 
-    singleDiv.classList.add("field");
+    singleRow.classList.add("single-row");
 
-    container.appendChild(singleDiv);
+    container.appendChild(singleRow);
 
-    singleDiv.addEventListener("mouseenter", () => singleDiv.classList.add("black"));
+        for(let j = 0; j < a; j++) {
+
+            const field = document.createElement("div");
+
+            field.classList.add("field");
+
+            singleRow.appendChild(field);
+
+            field.addEventListener("mouseenter", () => field.classList.add("black"));
+        }
+
+    
 
     }
 }
@@ -23,7 +34,7 @@ createGrid(16);
 
 btnSize.addEventListener("click", () => {
     
-    document.querySelectorAll(".field").forEach(element => element.remove());
+    document.querySelectorAll(".single-row").forEach(element => element.remove());
     createGrid(input.value);
 
 });
